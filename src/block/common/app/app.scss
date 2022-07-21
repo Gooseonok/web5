@@ -1,0 +1,26 @@
+@import "~style";
+
+$block-name: "b-app";
+
+.#{$block-name} {
+	width: 100vh;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color:#282c34;
+
+	@keyframes rot {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	&__picture {
+        animation: 4s linear 0s normal none infinite running rot;
+	}
+}

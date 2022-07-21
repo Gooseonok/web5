@@ -1,0 +1,16 @@
+@import "~style";
+
+$block-name: "b-techart-copyright";
+
+.#{$block-name} {
+	font-size: 20px;
+
+	a {
+		color: $color-black;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $color-orange;
+		}
+	}
+}
